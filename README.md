@@ -7,11 +7,10 @@ Welcome to the Angular PokeDex project! This project is built using Angular and 
 ## 🚀 Set Up
 
 To get started with the Angular PokeDex project, follow these simple steps:
-
+<!-- 
 1. Clone the repository to your local machine:
    git clone https://github.com/your-username/angular-pokedex.git
-
-css
+ -->
 
 
 2. Navigate to the project directory:
@@ -30,16 +29,17 @@ css
 
 5. Open your favorite browser and visit `http://localhost:4200` to access the Angular PokeDex!
 
-## 📷 Screenshots
+<!-- ## 📷 Screenshots
 
 Here are some screenshots of the Angular PokeDex in action:
-
-![PokeDex Home](./screenshots/home.png)
+ -->
+<!-- ![PokeDex Home](./screenshots/home.png)
 *The home page of the Angular PokeDex, where you can search for Pokemons.*
 
 ![PokeDex Details](./screenshots/details.png)
 *Details page showcasing the information and image of a specific Pokemon.*
-
+ -->
+ 
 ## 🛠️ Technologies Used
 
 The Angular PokeDex project leverages the following technologies:
