@@ -1,0 +1,25 @@
+.navbar{
+  background-color: #EE5250;
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-logo{
+  height: 87%;
+  margin-left: 3%;
+}
+
+
+.spacer{
+  margin-left:73%;
+}
+
+
+.icon{
+  height: 40px;
+  padding-bottom: 0.3%;
+  margin-left:1%;
+}
+
+/* dark mode bg color: #21232a*/
