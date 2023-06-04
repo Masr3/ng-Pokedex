@@ -1,1 +1,8 @@
-<p>content works!</p>
+<br>
+<hr>
+<br>
+<a href="#">
+<span *ngIf="fetchedPokemon;">
+  <img [src]='fetchedPokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"].front_default' alt="pokemon sprite">
+</span>
+</a>
