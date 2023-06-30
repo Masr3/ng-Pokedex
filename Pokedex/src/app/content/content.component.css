@@ -1,0 +1,56 @@
+.pokemon-sprite .pokemon-sprite-info {
+  visibility: hidden;
+  width: 80px;
+  font-size: 12px;
+  font-family: monospace;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pokemon-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+}
+
+.pokemon-card .pokemon-sprite {
+  max-width: 100%;
+  height: auto;
+  width: 120px;
+}
+.tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.pokemon-card:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}

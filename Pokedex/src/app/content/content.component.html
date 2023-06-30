@@ -1,8 +1,31 @@
-<br>
-<hr>
-<br>
-<a href="#">
-<span *ngIf="fetchedPokemon;">
-  <img [src]='fetchedPokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"].front_default' alt="pokemon sprite">
+<br />
+<hr />
+<br />
+<span *ngIf="fetchedPokemon">
+  <img
+    [src]="
+      fetchedPokemon['sprites']['versions']['generation-v']['black-white'][
+        'animated'
+      ].front_default
+    "
+    alt="pokemon sprite"
+  />
 </span>
-</a>
+
+<br />
+<br />
+<div class="pokemon-grid">
+  <ng-container *ngFor="let allPokemons of allSprites; let i = index">
+    <span class="pokemon-card">
+      <a
+        (click)="getPokemonId(allPokemons.id)"
+        [routerLink]="['../pokemonInfo', i + 1]"
+      >
+        <img
+          class="pokemon-sprite"
+          [src]="allPokemons['sprites'].front_default"
+        />
+      </a>
+    </span>
+  </ng-container>
+</div>

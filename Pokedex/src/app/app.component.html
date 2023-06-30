@@ -1,5 +1,6 @@
 <app-navbar></app-navbar>
 <app-search-pokemon (newPokemon)="pokemon = $event"></app-search-pokemon>
 
+<router-outlet></router-outlet>
 
-<app-content [pokemon]= "pokemon"></app-content>
+<app-content [pokemon]="pokemon"></app-content>

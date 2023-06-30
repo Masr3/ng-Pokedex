@@ -1,0 +1,16 @@
+<div>
+  <img
+    [src]="
+      pokemon['sprites']['versions']['generation-v']['black-white']
+        .front_default
+    "
+    alt="pokemon sprite"
+    width="400px"
+  />
+  {{ pokemon.name | titlecase }}
+  <span *ngFor="let type of pokemon['types']; let i = index"> </span>
+  <img [src]="getPokemonTypeImg(pokemon['types'][0]['type'].name)" />
+  <ng-container *ngIf="pokemon['types'].length > 1">
+    <img [src]="getPokemonTypeImg(pokemon['types'][1]['type'].name)" />
+  </ng-container>
+</div>
